@@ -1,3 +1,6 @@
+// script.js
+
+// Function to load HTML content into a specified element
 function includeHTML(filename, targetId) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
@@ -9,20 +12,7 @@ function includeHTML(filename, targetId) {
     xhr.send();
 }
 
-// Include header
+// Load initial content
 includeHTML('site-header.html', 'site-header');
-
-// Include hero
 includeHTML('hero.html', 'hero');
-
-includeHTML('about.html', 'about');
-
-includeHTML('services.html', 'services');
-
-includeHTML('testimonials.html', 'testimonials');
-
-// Include contact
-includeHTML('contact.html', 'contact');
-
-// Include footer
 includeHTML('site-footer.html', 'site-footer');
