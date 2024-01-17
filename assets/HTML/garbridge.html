@@ -28,6 +28,17 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+/* Adjusted styles for team member cards */
+.w3-card {
+  height: 100%; /* Set the height to 100% */
+  box-sizing: border-box; /* Include padding and border in the height calculation */
+}
+
+.w3-card img {
+  width: 100%; /* Make sure the image fills the card */
+  height: auto; /* Maintain the aspect ratio */
+}
 </style>
 </head>
 <body>
@@ -43,7 +54,6 @@ body, html {
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> OPTIONS</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -128,59 +138,59 @@ body, html {
 <!-- Team Section -->
 <div class="w3-container" style="padding:128px 16px" id="team">
   <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The ones who runs this company</p>
+  <p class="w3-center w3-large">Our company leaders</p>
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team2.jpg" alt="Aavardan" style="width:100%">
+        
         <div class="w3-container">
           <h3>Aavardan Sundar</h3>
           <p class="w3-opacity">CEO</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Aavardan Sundar leads the company as the Chief Executive Officer, providing strategic vision and direction to drive the organization's success.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Gustas" style="width:100%">
+        
         <div class="w3-container">
           <h3>Gustas Gudaciauskas</h3>
           <p class="w3-opacity">Technical Director & Web Designer</p>
-          <p>Gustas has been with the company from the start and handles all technical and web-based problems. </p>
+          <p>Gustas has been with the company from the start and handles all technical and web-based problems ensuring the company is modern and efficient. </p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team3.jpg" alt="Ties" style="width:100%">
+        
         <div class="w3-container">
           <h3>Ties Post</h3>
           <p class="w3-opacity">Business Analyst</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Ties Post serves as the Business Analyst, leveraging analytical skills to assess and improve business processes, seeing solutions where others wouldn't.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="Emiel" style="width:100%">
+        
         <div class="w3-container">
           <h3>Emiel Spoek</h3>
           <p class="w3-opacity">Operations Manager</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Emiel Spoek serves as the Operations Manager, overseeing the day-to-day activities to ensure smooth and efficient business operations.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-card">
-          <img src="/w3images/team4.jpg" alt="Boris" style="width:100%">
+          
           <div class="w3-container">
             <h3>Boris Snijers</h3>
             <p class="w3-opacity">Company Ambassador</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p>Boris Snijers, in the role of Company Ambassador, represents the company externally and fosters positive relationships with stakeholders.</p>
             <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
           </div>
         </div>
@@ -265,16 +275,7 @@ body, html {
       </form>
     </div>
   </div>
-  <!-- Inquiry Form Section -->
-  <div class="w3-container" style="padding:128px 16px; text-align:center" id="businessInquiries">
-    <h3 class="w3-center">FOR OTHER BUSINESS INQUIRIES</h3>
-    <div style="margin-top:48px">
-      <a href="#contact" class="w3-button w3-black" style="text-align:center" onclick="scrollToContact()">
-        <i class="fa fa-envelope"></i> CONTACT US
-      </a>
-    </div>
-  </div>
-
+  
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
@@ -284,76 +285,14 @@ body, html {
   </div>
 </div>
 
-<!-- Pricing Section -->
-<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
-  <h3>SERVICE SELECTION</h3>
-  <p class="w3-large">Choose a service that fits your needs.</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">Arrange long-term waste collection</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">...</h2>
-          <span class="w3-opacity">...</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">Arrange long-term waste collection</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">...</h2>
-          <span class="w3-opacity">...</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">Arrange long-term waste collection</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16"><b>...</b> ...</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">...</h2>
-          <span class="w3-opacity">...</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Eindhoven, NL</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: ....</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Eindhoven, Netherlands</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +31 1919 3452</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: garbridge@info.nl</p>
     <br>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
